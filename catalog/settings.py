@@ -82,6 +82,8 @@ DATABASES = {
     }
 }
 
+# ?  py manage.py migrate komutu ile veritabanı tablolarını oluşturuyoruz. Bu komut, Django'nun varsayılan olarak kullandığı SQLite veritabanında gerekli tabloları oluşturur. Eğer farklı bir veritabanı kullanıyorsanız, DATABASES ayarlarını buna göre yapılandırmanız gerekir.
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
@@ -105,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'tr'
 
 TIME_ZONE = 'UTC'
 
