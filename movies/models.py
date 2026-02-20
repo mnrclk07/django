@@ -10,3 +10,6 @@ class Movie(models.Model):
     isPublished = models.BooleanField(default=True, verbose_name="Yayınlandı mı?")
     def __str__(self):
         return self.created_date.strftime("%Y-%m-%d %H:%M:%S") + " - " + self.name
+    
+    def get_image_path(self):
+        return '/img/'+self.image
